@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0793D4;
+  --color-brand-blue-hover: #057cb4;
+  --color-brand-yellow: #FBBF07;
+  --color-brand-yellow-hover: #e5ad06;
+  --color-brand-green: #79BF2B;
+  --color-brand-green-hover: #69a724;
+  --color-primary: #0793D4;
+  --color-primary-hover: #057cb4;
+  --color-warning: #FBBF07;
+  --color-warning-hover: #e5ad06;
+  --color-success: #79BF2B;
+  --color-success-hover: #69a724;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827; /* Charcoal */
+  --muted: #4b5563;
+  --panel: #f9fafb;
+  --panel-border: #e5e7eb;
+  
+  /* Primary Institution Colors requested by user */
+  --primary: #0793D4;         /* Vibrant Cyan/Blue */
+  --primary-hover: #057cb4;
+  --primary-active: #046897;
+  --warning: #FBBF07;         /* Warm Gold/Yellow */
+  --warning-hover: #e5ad06;
+  --success: #79BF2B;         /* Vibrant Green */
+  --success-hover: #69a724;
+  --danger: #dc2626;          /* Red for destructive actions */
+}
+
+/* Ensure strictly NO gradients across any element */
+* {
+  background-image: none !important;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus ring using primary institution color */
+:focus-visible {
+  outline: 2px solid #0793D4;
+  outline-offset: 2px;
+}
+
+/* Brand utility classes */
+.bg-brand-blue {
+  background-color: #0793D4;
+}
+
+.hover\:bg-brand-blue-hover:hover {
+  background-color: #057cb4;
+}
+
+.text-brand-blue {
+  color: #0793D4;
+}
+
+.border-brand-blue {
+  border-color: #0793D4;
+}
+
+.bg-brand-yellow {
+  background-color: #FBBF07;
+}
+
+.hover\:bg-brand-yellow-hover:hover {
+  background-color: #e5ad06;
+}
+
+.text-brand-yellow {
+  color: #9a7400;
+}
+
+.border-brand-yellow {
+  border-color: #FBBF07;
+}
+
+.bg-brand-green {
+  background-color: #79BF2B;
+}
+
+.hover\:bg-brand-green-hover:hover {
+  background-color: #69a724;
+}
+
+.text-brand-green {
+  color: #55881e;
+}
+
+.border-brand-green {
+  border-color: #79BF2B;
+}
+
+.bg-charcoal {
+  background-color: #111827;
+}
+
+.text-charcoal {
+  color: #111827;
+}
+
+.bg-panel {
+  background-color: #f9fafb;
+}
+
+.border-panel {
+  border-color: #e5e7eb;
+}
